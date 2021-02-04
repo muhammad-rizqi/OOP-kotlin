@@ -1,11 +1,12 @@
 package data
 
 class Person(
-    firstName: String,
-    middleName: String?,
-    lastName: String
+    var firstName: String,  // constructor langsung properties
+    var middleName: String?,
+    var lastName: String
 ) {
-    var firstName: String = firstName
-    var middleName: String? = middleName
-    var lastName: String = lastName
+    // dipanggil di awal instansiasi
+    init {
+        println("Objek  $firstName dibuat")
+    }
 }
