@@ -1,7 +1,11 @@
 package data
 
-class Person {
-    var firstName: String = ""
-    var middleName: String? = null
-    var lastName: String = ""
+class Person(
+    firstName: String,
+    middleName: String?,
+    lastName: String
+) {
+    var firstName: String = firstName
+    var middleName: String? = middleName
+    var lastName: String = lastName
 }

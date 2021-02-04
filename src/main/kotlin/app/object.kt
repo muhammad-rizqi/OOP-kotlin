@@ -3,13 +3,8 @@ package app
 import data.Person
 
 fun main() {
-    val jono = Person()
-    jono.firstName = "Jono"
-    jono.lastName = "Aja"
-
-    val joni = Person()
-    joni.firstName = "Joni"
-    joni.lastName = "Aja"
+    val jono = Person("Jono", "bin", "Aja")
+    val joni = Person("Joni", "bin", "Aja")
 
     println(jono.firstName)
     println(joni.firstName)
